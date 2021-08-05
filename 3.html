@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Problem 3</title>
+</head>
+
+<h1 id= "title"></h1>
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+  var txt;
+  var age = prompt("Input your age", "");
+  if (age == null || age == "") {
+    txt = "User cancelled the prompt.";
+  } 
+  else if ( age>=18) {
+    txt = "User is eligible to vote.";
+  }
+  else{
+  	txt = "User is not eligible to vote."
+  }
+  document.getElementById("demo").innerHTML = txt;
+  document.getElementById('title').innerHTML = 'Voting Details of "Write your Name here"'
+}
+window.addEventListener("load", function(){
+    myFunction();
+});
+</script>
+<body>
+
+</body>
+</html>
